@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe Card</title>
+    <style>
+      body {
+        background-color: #201f1f;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .imga {
+        background-image: url(imag1.png);
+        background-position: center;
+        margin: 0 auto;
+        display: flex;
+        height: 200px;
+        width: 210px;
+        margin-bottom: 5px;
+      }
+      .grid-container {
+        background-color: #ffff;
+        padding: 10px;
+        border: 5px solid #16727e;
+        border-radius: 20px;
+        transition: margin-right 2s ease-in-out;
+        height: 400px;
+        width: 300px;
+        opacity: 0;
+        transform: translateY(50px);
+        animation: fadeUp 1s ease forwards;
+      }
+      @keyframes fadeUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      h2 {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #209aaa;
+        border-radius: 8px;
+      }
+      h2:hover {
+        border: 2px solid black;
+        background-color: #16727e;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+      }
+      .coming {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        width: 300px;
+        height: 30px;
+        margin-bottom: 30px;
+      }
+      .actions {
+        background-color: #ffff;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .buy {
+        background-color: #ffcb0e;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 20px;
+        width: 110px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid black;
+      }
+      .add {
+        background-color: #f66b15;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 20px;
+        width: 110px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid black;
+      }
+      .buy:hover,
+      .add:hover {
+        background-color: #0c4249;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-container">
+        <div class="imga"></div>
+        <h2>FUTURSTIC HC SHOE</h2>
+        <div class="coming"><h3>coming soon</h3></div>
+        <div class="actions">
+          <div class="buy">BUY NOW</div>
+          <div class="add">ADD TO CARD</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
